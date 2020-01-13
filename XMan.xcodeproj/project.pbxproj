@@ -11,7 +11,35 @@
 		E650670B23CCB5F600621D8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650670A23CCB5F600621D8B /* ViewController.swift */; };
 		E650670D23CCB5F700621D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E650670C23CCB5F700621D8B /* Assets.xcassets */; };
 		E650671023CCB5F700621D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E650670E23CCB5F700621D8B /* Main.storyboard */; };
+		E650671F23CCB61800621D8B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E650671E23CCB61800621D8B /* Cocoa.framework */; };
+		E650672223CCB61800621D8B /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650672123CCB61800621D8B /* SourceEditorExtension.swift */; };
+		E650672423CCB61800621D8B /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650672323CCB61800621D8B /* SourceEditorCommand.swift */; };
+		E650672923CCB61800621D8B /* Terminalator.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E650671C23CCB61800621D8B /* Terminalator.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E650672723CCB61800621D8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E65066FD23CCB5F600621D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E650671B23CCB61800621D8B;
+			remoteInfo = Terminalator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E650672D23CCB61800621D8B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E650672923CCB61800621D8B /* Terminalator.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E650670523CCB5F600621D8B /* XMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +49,12 @@
 		E650670F23CCB5F700621D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E650671123CCB5F800621D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E650671223CCB5F800621D8B /* XMan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XMan.entitlements; sourceTree = "<group>"; };
+		E650671C23CCB61800621D8B /* Terminalator.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Terminalator.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E650671E23CCB61800621D8B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E650672123CCB61800621D8B /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		E650672323CCB61800621D8B /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		E650672523CCB61800621D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E650672623CCB61800621D8B /* Terminalator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Terminalator.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E650671923CCB61800621D8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E650671F23CCB61800621D8B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				E650670723CCB5F600621D8B /* XMan */,
+				E650672023CCB61800621D8B /* Terminalator */,
+				E650671D23CCB61800621D8B /* Frameworks */,
 				E650670623CCB5F600621D8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E650670523CCB5F600621D8B /* XMan.app */,
+				E650671C23CCB61800621D8B /* Terminalator.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +108,25 @@
 			path = XMan;
 			sourceTree = "<group>";
 		};
+		E650671D23CCB61800621D8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E650671E23CCB61800621D8B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E650672023CCB61800621D8B /* Terminalator */ = {
+			isa = PBXGroup;
+			children = (
+				E650672123CCB61800621D8B /* SourceEditorExtension.swift */,
+				E650672323CCB61800621D8B /* SourceEditorCommand.swift */,
+				E650672523CCB61800621D8B /* Info.plist */,
+				E650672623CCB61800621D8B /* Terminalator.entitlements */,
+			);
+			path = Terminalator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +137,34 @@
 				E650670123CCB5F600621D8B /* Sources */,
 				E650670223CCB5F600621D8B /* Frameworks */,
 				E650670323CCB5F600621D8B /* Resources */,
+				E650672D23CCB61800621D8B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E650672823CCB61800621D8B /* PBXTargetDependency */,
 			);
 			name = XMan;
 			productName = XMan;
 			productReference = E650670523CCB5F600621D8B /* XMan.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E650671B23CCB61800621D8B /* Terminalator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E650672A23CCB61800621D8B /* Build configuration list for PBXNativeTarget "Terminalator" */;
+			buildPhases = (
+				E650671823CCB61800621D8B /* Sources */,
+				E650671923CCB61800621D8B /* Frameworks */,
+				E650671A23CCB61800621D8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Terminalator;
+			productName = Terminalator;
+			productReference = E650671C23CCB61800621D8B /* Terminalator.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +177,9 @@
 				ORGANIZATIONNAME = Pluginator;
 				TargetAttributes = {
 					E650670423CCB5F600621D8B = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					E650671B23CCB61800621D8B = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -112,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				E650670423CCB5F600621D8B /* XMan */,
+				E650671B23CCB61800621D8B /* Terminalator */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +210,13 @@
 			files = (
 				E650670D23CCB5F700621D8B /* Assets.xcassets in Resources */,
 				E650671023CCB5F700621D8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E650671A23CCB61800621D8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +232,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E650671823CCB61800621D8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E650672223CCB61800621D8B /* SourceEditorExtension.swift in Sources */,
+				E650672423CCB61800621D8B /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E650672823CCB61800621D8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E650671B23CCB61800621D8B /* Terminalator */;
+			targetProxy = E650672723CCB61800621D8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E650670E23CCB5F700621D8B /* Main.storyboard */ = {
@@ -268,6 +379,7 @@
 		E650671623CCB5F800621D8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XMan/XMan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +400,7 @@
 		E650671723CCB5F800621D8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XMan/XMan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +414,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluginator.XMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E650672B23CCB61800621D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Terminalator/Terminalator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YPS6454PCU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Terminalator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pluginator.XMan.Terminalator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E650672C23CCB61800621D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Terminalator/Terminalator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YPS6454PCU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Terminalator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pluginator.XMan.Terminalator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -322,6 +477,15 @@
 			buildConfigurations = (
 				E650671623CCB5F800621D8B /* Debug */,
 				E650671723CCB5F800621D8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E650672A23CCB61800621D8B /* Build configuration list for PBXNativeTarget "Terminalator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E650672B23CCB61800621D8B /* Debug */,
+				E650672C23CCB61800621D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
